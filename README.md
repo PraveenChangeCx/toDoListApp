@@ -2,9 +2,10 @@
 
 # Backend Setup command step by step
 
+```bash 
 yarn init
 yarn add typescript -g
-
+```
 ## tsconfig.json
 
 `{
@@ -20,11 +21,11 @@ yarn add typescript -g
   "include": ["src/**/*"],
   "exclude": ["src/types/*.ts", "node_modules", ".vscode"]
 }`
-
+```bash 
 yarn add express cors mongoose
 yarn add -D @types/node @types/express @types/mongoose @types/cors
 yarn add -D concurrently nodemon
-
+```
 ## nodemon.json
 
 `{
@@ -36,14 +37,15 @@ yarn add -D concurrently nodemon
 }`
 
 # Frontend Setup command step by step
-
+```bash 
 npx create-react-app frontend --template typescript
 yarn add axios
 npm install -D tailwindcss
 npx tailwindcss init
-
+```
 ## add following tailwind directives to your global.css/index.css file
-
+```bash 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
